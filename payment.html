@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+            <img src="./images/logo.png" alt="Logo">
+            <span class="site-name">electronic store</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+        </ul>
+        <div class="nav-icons">
+            <input type="text" placeholder="Search..." class="search-box" style="visibility: hidden;">
+            
+            <a href="cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="payment-container">
+        <h2 class="payment-title">Payment Information</h2>
+    
+        <form id="payment-form" onsubmit="handlePayment(event)">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+    
+            <button type="submit" class="confirm-btn">Confirm Purchase</button>
+        </form>
+    </div>
+
+    <!-- Confirmation Popup -->
+    <div id="confirmation-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div id="popup-message"></div>
+            <button class="continue-shopping" id="popup" onclick="closePopup()">Continue Shopping</button>
+
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <button class="scroll-to-top" id="scrollBtn" onclick="scrollOnePageUp()">↑</button>
+            <p>Copyright © 2025 <span>Electronic Store</span></p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>   
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
