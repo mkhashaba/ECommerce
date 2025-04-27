@@ -279,7 +279,7 @@ body {
 }
 
 .add-to-cart:hover {
-    background: #e68900;
+    background: #b32900;
 }
 
 .toast-message {
@@ -429,7 +429,7 @@ body {
 }
 
 .checkout-btn:hover {
-    background: #e68900;
+    background: #b32900;
 }
 
 .cart-items {
@@ -506,7 +506,7 @@ body {
 }
 
 .quantity button:hover {
-    background: #e68900;
+    background: #b32900;
 }
 
 .delete-btn {
@@ -594,7 +594,7 @@ body {
 }
 
 .confirm-btn:hover {
-    background-color: #e68900;
+    background-color: #b32900;
 }
 
 .popup {
@@ -696,7 +696,7 @@ body {
 }
 
 .continue-shopping:hover {
-    background-color: #e68900;
+    background-color: #b32900;
     transform: scale(1.05);
 }
 
